@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us</title>
+    <link rel="stylesheet" href="../assets/css/contact.css">
 </head>
 <body>
     <header>
@@ -13,11 +14,11 @@
         <ul>
             <li><a href="./index.html">Home</a></li>
             <li><a href="./food_menu.html">Menu</a></li>
-            <li><a href="./contact.html">Contact</a></li>
+            <li><a href="./contact.html" class="active">Contact</a></li>
         </ul>
     </nav>
     <main>
-        <section id="contact_info">
+        <section class="contact_info">
             <address>
                 <p>
                     Guldbergsgade 29N 2200 Copenhagen
@@ -29,36 +30,36 @@
                     E-mail: <a href="mailto:info@restaurantkea.dk">info@restaurantkea.dk</a>
                 </p>
             </address>
-            <img src="../img/map.jpg" alt="">
+            <img class="map" src="../img/map.jpg" alt="">
         </section>
-        <form id="contact_form" action="mailto:info@restaurantkea.dk" method="post">
+        <form class="contact_form" action="mailto:info@restaurantkea.dk" method="post">
             <fieldset>
                 <legend>Contact form</legend>
                 <div>
                     <label for="full_name">Full Name</label>
-                    <input type="text" name="input_full_name" id="full_name" required>
+                    <input type="text" name="input_full_name" class="full_name" required>
                 </div>
                 <div>
                     <label for="phone_number">Phone no.</label>
-                    <input type="tel" name="input_phone_number" id="phone_number" required>
+                    <input type="text" name="input_phone_number" class="phone_number" required>
                 </div>
                 <div>
                     <label for="email">Email</label>
-                    <input type="text" name="input_email" id="email" required>
+                    <input type="email" name="input_email" class="email" required>
                 </div>
                 <div>
                     <label for="persons">Persons</label>
-                    <input type="number" name="input_persons" id="persons" value="2" max="50" required>
+                    <input type="number" name="input_persons" class="persons" value="2" max="50" required>
                 </div>
                 <div>
                     <label for="date_time">Date and time</label>
-                    <input type="datetime-local" name="input_date_time" id="date_time" required>
+                    <input type="datetime-local" name="input_date_time" class="date_time" required>
                 </div>
                 <div>
                     <label for="further_information">Further information</label>
                 </div>
                 <div>
-                    <textarea name="input_further_information" id="further_information"></textarea>
+                    <textarea name="input_further_information" class="further_information"></textarea>
                 </div>
                 <input type="submit" value="Send">
             </fieldset>

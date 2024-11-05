@@ -1,0 +1,145 @@
+@import url('variables.css');
+
+* {
+    font-family: sans-serif, Arial, Helvetica, sans-serif;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    padding: 10px;
+    background-color: var(--primary-color);
+    font-size: 18px;
+
+    h1 {
+        color: var(--text-color);
+        margin-left: 20px;
+    }
+}
+
+nav {
+    background-color: var(--secondary-color);
+    padding: 20px;
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: flex-start;
+
+        li {
+            margin-right: 20px;
+            border-bottom: none;
+
+            a {
+                color: var(--text-color);
+                text-decoration: none;
+                font-size: 18px;
+                font-weight: 1000;
+                display: block;
+            }
+        }
+    }
+}
+
+nav ul li a.active {
+    color: #FFEE88;
+}
+
+@media (max-width: 480px) {
+    nav ul {
+        flex-direction: column; /* Stacks the items vertically */
+        align-items: stretch; /* Align items to the left */
+    }
+
+    nav ul li {
+        margin-bottom: 10px; /* Adds space between stacked items */
+        margin-right: 0; /* Removes the right margin */
+        border-bottom: thin solid var(--text-color);;
+    }
+
+    nav ul li a {
+        font-size: 16px; /* Adjust font size for smaller screens */
+        padding: 10px 0; /* Adjust padding for better touch targets */
+        display: block;
+        text-align: center;
+    }
+
+    main section {
+        display: flex;
+        flex-direction: column; /* Stack elements vertically */
+        align-items: center;
+        text-align: center; /* Center-align text */
+        padding: 2rem;
+    }
+}
+
+footer {
+    text-align: center;
+    color: var(--text-color);
+    background-color: var(--secondary-color);
+    padding: 10px 0; /* Adjust padding for better spacing */
+    position: fixed;
+    bottom: 0; /* Fixes the footer to the bottom */
+    left: 0;
+    width: 100%; /* Ensures the footer spans the full width */
+    z-index: 100; /* Ensures the footer stays on top */
+}
+
+main section img {
+    float: right; /* Floats the image to the right of the text */
+    margin-left: 20px; /* Adds space between the image and the text */
+    margin-right: 20px; /* Adjust the width of the image */
+    border-radius: 10px; /* Adds rounded corners */
+    
+}
+
+main ul {
+    list-style-type: none;
+    color: #fe675a;
+    font-weight: bold;
+
+    li {
+        margin-bottom: 10px;
+    }
+}
+
+main p {
+    text-align: justify;
+    margin-left: 20px;
+}
+
+@media (max-width: 480px) {
+    body > main {
+        padding-bottom: 3rem;
+    }
+}
+
+@media (max-width: 480px) {
+    body > footer {
+        position: fixed;
+    }
+}
+
+
+@media (max-width: 800px) {
+    main {
+        width: 95vw;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+@media (max-width: 900px) {
+    main {
+        width: 88vw;
+    }
+}
+@media(max-width: 1024px) {
+    main {
+        width: 80vw;
+    }
+}

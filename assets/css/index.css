@@ -1,0 +1,7 @@
+@import url('styles.css');
+
+blockquote {
+    padding: 0.8rem;
+    background: lightgray;
+    margin-right: 20px;
+}
